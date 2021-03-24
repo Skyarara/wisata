@@ -18,6 +18,14 @@
 
 
     <h5 class="h5 mb-0 text-black-800">Selamat Datang Venti !</h5>
+
+    <a href="../map/map.php" class="btn btn-success btn-icon-split">
+        <span class="icon text-white-50">
+            <i class="fas fa-check"></i>
+        </span>
+        <span class="text">Split Button Success</span>
+    </a>
+
     <!-- End of Main Content -->
 
     <?php
