@@ -9,7 +9,11 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
+<<<<<<< HEAD
+        <h1 class="h3 mb-0 text-gray-800"style="text-align:center;">Dashboard</h1>
+=======
         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+>>>>>>> c7c4bbc5271a50818be422cc48a5c7aec30ae941
     </div>
 
 
