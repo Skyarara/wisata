@@ -23,7 +23,7 @@
         </p>
     </form>
 
-    <iframe width="100%" height="500" src="https://seekbeak.com/v/531Bw5L4zBL"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!4v1617529960140!6m8!1m7!1sCAoSLEFGMVFpcE8xTmF1d3FOcHdXZC0yMkNheUdRVnFKMkxMUHdHUHZNR0xsOXp5!2m2!1d-7.254288!2d112.8018528!3f301.6142454004159!4f0.9217158648408343!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
 </div>
 
