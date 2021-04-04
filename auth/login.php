@@ -2,8 +2,8 @@
 
 
         
-        // var_dump($_GET);
-        // exit;
+        var_dump($_POST);
+        exit;
         // if(isset($_POST['eko'])){
         // }
     
@@ -52,25 +52,18 @@
                                         <div class="text-center">
                                             <h1 class="h4 text-gray-900 mb-4">Welcome Back Traveler!</h1>
                                         </div>
-                                        <form class="user" method="get" action="">
+                                        <form class="user" method="POST" action="">
                                             <!-- action="../main/index.php" -->
                                             <div class="form-group">
                                                 <input type="text" class="form-control form-control-user"
-                                                    id="exampleInputEmail" aria-describedby="emailHelp"
-                                                    placeholder="Email" required>
+                                                    id="exampleInputEmail" name="email" placeholder="Email" required>
                                             </div>
                                             <div class="form-group">
-                                                <input type="password" class="form-control form-control-user"
-                                                    id="exampleInputPassword" placeholder="Password" required>
+                                                <input type="password" name="password"
+                                                    class="form-control form-control-user" id="exampleInputPassword"
+                                                    placeholder="Password" required>
                                             </div>
-                                            <!-- <div class="form-group">
-                                                <div class="custom-control custom-checkbox small">
-                                                    <input type="checkbox" class="custom-control-input"
-                                                        id="customCheck">
-                                                    <label class="custom-control-label" for="customCheck">Remember
-                                                        Me</label>
-                                                </div>
-                                            </div> -->
+
                                             <button type="submit"
                                                 class="btn btn-primary btn-user btn-block">Masuk</button>
 
