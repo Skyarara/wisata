@@ -2,7 +2,7 @@
 
 
         
-        var_dump($_GET);
+        // var_dump($_GET);
         // exit;
         // if(isset($_POST['eko'])){
         // }
@@ -71,13 +71,9 @@
                                                         Me</label>
                                                 </div>
                                             </div> -->
-<<<<<<< HEAD
                                             <button type="submit"
                                                 class="btn btn-primary btn-user btn-block">Masuk</button>
-=======
-                                            <button type="submit" class="btn btn-primary btn-user btn-block"
-                                                value="eko">Masuk</button>
->>>>>>> f7d0d8f0cd1d712f4ce4e5d82d1b97872d6bb682
+
                                             <hr>
                                             <a href="#" class="btn btn-google btn-user btn-block">
                                                 <i class="fab fa-google fa-fw"></i> Masuk dengan Google
