@@ -9,7 +9,7 @@
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fab fa-github-alt"></i>
             </div>
-            <div class="sidebar-brand-text mx-3">Lumine</div>
+            <div class="sidebar-brand-text mx-3">KenPark</div>
         </a>
 
         <!-- Divider -->
@@ -75,7 +75,7 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="../other/404.php">
+            <a class="nav-link" href="../tourGuide/index.php">
                 <i class="fas fa-fw fa-users"></i>
                 <span>Tour Guide</span></a>
         </li>

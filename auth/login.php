@@ -2,8 +2,8 @@
 
 
         
-        var_dump($_POST);
-        exit;
+        // var_dump($_POST);
+        // exit;
         // if(isset($_POST['eko'])){
         // }
     
@@ -52,7 +52,7 @@
                                         <div class="text-center">
                                             <h1 class="h4 text-gray-900 mb-4">Welcome Back Traveler!</h1>
                                         </div>
-                                        <form class="user" method="POST" action="">
+                                        <form class="user" method="POST" action="../main/index.php">
                                             <!-- action="../main/index.php" -->
                                             <div class="form-group">
                                                 <input type="text" class="form-control form-control-user"
