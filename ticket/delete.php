@@ -1,11 +1,9 @@
 <?php
     include '../conn.php';
 
-    exit;
+    $id = $_GET['id_ticket'];
 
-    $id = $_GET['id_tourguide'];
-
-    $sql = "DELETE FROM tourguide WHERE id_tourguide ='$id'";
+    $sql = "DELETE FROM ticket WHERE id_ticket ='$id'";
     $query = mysqli_query($conn, $sql);
 
     if($query){

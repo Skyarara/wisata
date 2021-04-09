@@ -1,11 +1,13 @@
 <?php
     include '../conn.php';
 
-    exit;
+    // var_dump($_POST);
+    // exit;
 
-    $id = $_GET['id_tourguide'];
+    $jenis_wisata = $_POST['jenis_wisata'];
+    $harga = $_POST['harga'];
 
-    $sql = "DELETE FROM tourguide WHERE id_tourguide ='$id'";
+    $sql = "INSERT INTO ticket VALUES('', '$jenis_wisata', '$harga')";
     $query = mysqli_query($conn, $sql);
 
     if($query){
