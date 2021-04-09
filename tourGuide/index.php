@@ -35,12 +35,12 @@
                     </thead>
                     <tfoot>
                         <tr>
-                            <th rowspan="1" colspan="1">Nomor</th>
-                            <th rowspan="1" colspan="1">Foto</th>
-                            <th rowspan="1" colspan="1">Nama</th>
-                            <th rowspan="1" colspan="1">Email</th>
-                            <th rowspan="1" colspan="1">Nomor HP</th>
-                            <th rowspan="1" colspan="1">Umur</th>
+                            <th>Nomor</th>
+                            <th>Foto</th>
+                            <th>Nama</th>
+                            <th>Email</th>
+                            <th>Nomor HP</th>
+                            <th>Umur</th>
                             <th>Aksi</th>
                         </tr>
                     </tfoot>

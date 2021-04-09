@@ -1,6 +1,8 @@
 <?php
     include '../conn.php';
 
+    exit;
+
     $id = $_GET['id_tourguide'];
 
     $sql = "DELETE FROM tourguide WHERE id_tourguide ='$id'";
