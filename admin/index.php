@@ -45,9 +45,12 @@
                             <td><?=$data['username']?></td>
                             <td><?=$data['password']?></td>
                             <td>
-                                <a href="delete.php?id_admin=<?=$data['id_admin']?>"><button>Hapus</button></a>
-                                <button>Edit</button>
-                                <button>Detil</button>
+                                <a href="delete.php?id_admin=<?=$data['id_admin']?>"
+                                    class="btn btn-danger btn-sm">Hapus</a>
+                                <a href="edit.php?id_admin=<?=$data['id_admin']?>"
+                                    class="btn btn-warning btn-sm">Edit</a>
+                                <a href="detil.php?id_admin=<?=$data['id_admin']?>"
+                                    class="btn btn-info btn-sm">Detail</a>
                             </td>
                         </tr>
                         <?php } ?>
