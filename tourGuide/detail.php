@@ -12,7 +12,7 @@
 
     <!-- Page Heading -->
     <h1 class="h3 mb-2 text-gray-800">Tour Guide</h1>
-    <p class="mb-4">Tambah Tour Guide </p>
+    <p class="mb-4">Detail Tour Guide </p>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
