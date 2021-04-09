@@ -54,9 +54,12 @@
                             <td><?=$data['no_hp']?></td>
                             <td><?=$data['umur']?></td>
                             <td>
-                                <a href="delete.php?id_tourguide=<?=$data['id_tourguide']?>"><button>Hapus</button></a>
-                                <button>Edit</button>
-                                <button>Detil</button>
+                                <a href="delete.php?id_tourguide=<?=$data['id_tourguide']?>"
+                                    class="btn btn-danger btn-sm">Hapus</a>
+                                <a href="edit.php?id_tourguide=<?=$data['id_tourguide']?>"
+                                    class="btn btn-warning btn-sm">Edit</a>
+                                <a href="detil.php?id_tourguide=<?=$data['id_tourguide']?>"
+                                    class="btn btn-info btn-sm">detil</a>
                             </td>
                         </tr>
                         <?php } ?>
