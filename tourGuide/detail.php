@@ -3,6 +3,10 @@
     include "../layout/user/sidebar.php";
     include "../layout/user/navbar.php";
 
+    $id_tourguide = $_GET['id_tourguide'];
+    $sql= "SELECT * FROM tourguide WHERE id_tourguide='$id_tourguide'";
+    $query = mysqli_query($conn, $sql);
+    $data = mysqli_fetch_array($query);
 ?>
 <div class="container-fluid">
 
@@ -16,41 +20,37 @@
             <h6 class="m-0 font-weight-bold text-primary">Tour Guide</h6>
         </div>
         <div class="card-body">
-            <form action="action_add.php" method="POST">
+            <form>
                 <div class="mb-3">
                     <label class="form-label">Nama</label>
-                    <input type="text" class="form-control" name="nama" required>
+                    <input type="text" class="form-control" value="<?=$data['nama_tourguide']?>" readonly>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Email</label>
-                    <input type="email" class="form-control" name="email" required>
+                    <input type="email" class="form-control" name="email" value="<?=$data['email_tourguide']?>"
+                        readonly>
                 </div>
                 <div class="mb-3">
                     <label class="form-check-label">Nomor HP</label>
-                    <input type="text" class="form-control" name="hp" required>
+                    <input type="text" class="form-control" name="hp" value="<?=$data['no_hp']?>" readonly>
                 </div>
                 <div class="mb-3">
                     <label class="form-check-label">Nomor KTP</label>
-                    <input type="text" class="form-control" name="ktp" required>
+                    <input type="text" class="form-control" name="umur" value="<?=$data['no_ktp']?>" readonly>
                 </div>
                 <div class="mb-3">
                     <label class="form-check-label">Alamat</label>
-                    <textarea cols="30" rows="10" class="form-control" name="alamat" required></textarea>
+                    <textarea cols="30" rows="10" class="form-control" readonly><?=$data['alamat']?></textarea>
                 </div>
                 <div class="mb-3">
                     <label class="form-check-label">Umur</label>
-                    <input type="text" class="form-control" name="umur" required>
-                </div>
-                <div class="mb-3">
-                    <label class="form-check-label">Password</label>
-                    <input type="password" class="form-control" name="password" required>
+                    <input class="form-control" value="<?=$data['umur']?>" readonly>
                 </div>
                 <div class="mb-3">
                     <label class="form-check-label">Foto</label>
-                    <input type="file" class="form-control" name="foto" required>
+                    <input type="file" class="form-control" name="foto" readonly>
                 </div>
-                <button type="submit" class="btn btn-primary">Tambah</button>
-            </form>
+                <a href="index.php" class="btn btn-md btn-info">Back</a>
         </div>
 
     </div>

@@ -25,6 +25,19 @@
         <!-- Divider -->
         <hr class="sidebar-divider">
 
+        <div class="sidebar-heading">
+            Akun
+        </div>
+
+        <li class="nav-item">
+            <a class="nav-link" href="../admin/index.php">
+                <i class="fas fa-fw fa-user"></i>
+                <span>Admin</span></a>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
         <!-- Heading -->
         <div class="sidebar-heading">
             Peta
@@ -69,7 +82,7 @@
 
         <!-- Nav Item - Tables -->
         <li class="nav-item">
-            <a class="nav-link" href="../other/404.php">
+            <a class="nav-link" href="../ticket/index.php">
                 <i class="fas fa-fw fa-ticket-alt"></i>
                 <span>Tiket</span></a>
         </li>
