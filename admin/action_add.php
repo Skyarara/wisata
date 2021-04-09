@@ -13,7 +13,7 @@
     if($query){
         header("Location: index.php");
     }else{
-        echo 'Terjadi Kesalahan';
+        echo mysqli_error($conn);
     }
 
 ?>
