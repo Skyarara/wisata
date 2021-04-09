@@ -26,6 +26,11 @@
 
     <link href="../css/my.css" rel="stylesheet">
 
+    <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
 </head>
+<?php
+    include '../conn.php';
+?>
 
 <body id="page-top">
