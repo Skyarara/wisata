@@ -40,7 +40,7 @@
 
         <!-- Heading -->
         <div class="sidebar-heading">
-            Peta
+            Landmark
         </div>
         <li class="nav-item">
             <a class="nav-link" href="../map/map.php">
@@ -49,6 +49,9 @@
             <a class="nav-link" href="../map/street_view.php">
                 <i class="fas fa-fw fa-road"></i>
                 <span>Street View</span></a>
+            <a class="nav-link" href="../360_view/index.php">
+                <i class="fas fa-fw fa-vr-cardboard"></i>
+                <span>360 View</span></a>
         </li>
         <!-- <li class="nav-item">
         </li> -->
@@ -85,9 +88,7 @@
             <a class="nav-link" href="../ticket/index.php">
                 <i class="fas fa-fw fa-ticket-alt"></i>
                 <span>Tiket</span></a>
-        </li>
 
-        <li class="nav-item">
             <a class="nav-link" href="../tourGuide/index.php">
                 <i class="fas fa-fw fa-users"></i>
                 <span>Tour Guide</span></a>
