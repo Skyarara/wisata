@@ -59,7 +59,7 @@
                                 <a href="edit.php?id_tourguide=<?=$data['id_tourguide']?>"
                                     class="btn btn-warning btn-sm">Edit</a>
                                 <a href="detil.php?id_tourguide=<?=$data['id_tourguide']?>"
-                                    class="btn btn-info btn-sm">detil</a>
+                                    class="btn btn-info btn-sm">Detail</a>
                             </td>
                         </tr>
                         <?php } ?>
