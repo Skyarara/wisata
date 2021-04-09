@@ -24,7 +24,7 @@
                     aria-describedby="dataTable_info" style="width: 100%;">
                     <thead>
                         <tr role="row">
-                            <th>Nomor</th>
+                            <th stylesize="1%">Nomor</th>
                             <th>Foto</th>
                             <th>Nama</th>
                             <th>email</th>
@@ -57,9 +57,9 @@
                                 <a href="delete.php?id_tourguide=<?=$data['id_tourguide']?>"
                                     class="btn btn-danger btn-sm">Hapus</a>
                                 <a href="edit.php?id_tourguide=<?=$data['id_tourguide']?>"
-                                    class="btn btn-warning btn-sm">Edit</a>
-                                <a href="detil.php?id_tourguide=<?=$data['id_tourguide']?>"
-                                    class="btn btn-info btn-sm">detil</a>
+                                    class="btn btn-warning btn-sm">Ubah</a>
+                                <a href="detail.php?id_tourguide=<?=$data['id_tourguide']?>"
+                                    class="btn btn-info btn-sm">detail</a>
                             </td>
                         </tr>
                         <?php } ?>
@@ -73,6 +73,5 @@
 
 
 <?php 
-    // }
     include "../layout/user/footer.php";
 ?>
