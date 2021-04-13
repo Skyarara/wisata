@@ -1,13 +1,36 @@
 <?php
 
+session_start();
+// if( !isset($_SESSION("login")) {
+//     header("Location: login.php");
+//     exit;
+// }
 
+include '../conn.php';
+if( isset($_POST["login"])) {
+// var_dump(10);
+// exit;
+    $email = $_POST["email"];
+    $pass = $_POST["password"];
+
+    $result = mysqli_query($conn, "SELECT * FROM user WHERE email = '$email'");
+
+    if( mysqli_num_rows($result) === 1) {
         
-        // var_dump($_POST);
-        // exit;
-        // if(isset($_POST['eko'])){
-        // }
-    
-    ?>
+        $row = mysqli_fetch_assoc($result);
+        if($pass == $row["password"]) {
+            // var_dump($pass);
+            // exit;
+            header("Location: ../main/index.php");
+            exit;
+        }
+    } else {
+        echo "salah";
+    }
+    $error = true;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,7 +75,7 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Welcome Back Traveler!</h1>
                                     </div>
-                                    <form class="user" method="POST" action="../main/index.php">
+                                    <form class="user" method="POST" action="">
                                         <!-- action="../main/index.php" -->
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user"
@@ -64,7 +87,7 @@
                                                 placeholder="Password" required>
                                         </div>
 
-                                        <button type="submit" class="btn btn-primary btn-user btn-block">Masuk</button>
+                                        <button type="submit" name ="login" class="btn btn-primary btn-user btn-block">Masuk</button>
 
                                         <!-- <hr> -->
                                         <!-- <a href="#" class="btn btn-google btn-user btn-block">
