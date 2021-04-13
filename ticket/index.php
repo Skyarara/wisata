@@ -45,7 +45,8 @@
                             <td><?=$data['jenis_wisata']?></td>
                             <td><?=$data['harga']?></td>
                             <td>
-                                <a href="delete.php?id_ticket=<?=$data['id_ticket']?>"><button>Hapus</button></a>
+                                <a href="delete.php?id_ticket=<?=$data['id_ticket']?>"
+                                    class="btn btn-danger btn-sm">Hapus</a>
                                 <a href="edit.php?id_ticket=<?=$data['id_ticket']?>"
                                     class="btn btn-warning btn-sm">Ubah</a>
                                 <a href="detail.php?id_ticket=<?=$data['id_ticket']?>"
