@@ -49,9 +49,9 @@
             <a class="nav-link" href="../map/street_view.php">
                 <i class="fas fa-fw fa-road"></i>
                 <span>Street View</span></a>
-            <a class="nav-link" href="../360_view/index.php">
+            <a class="nav-link" href="../spot/index.php">
                 <i class="fas fa-fw fa-vr-cardboard"></i>
-                <span>360 View</span></a>
+                <span>Spots</span></a>
         </li>
         <!-- <li class="nav-item">
         </li> -->
