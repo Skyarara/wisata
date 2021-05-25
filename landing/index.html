@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../css/landing2.css" />
-		 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />	
 	</head>
 	<body class="landing">
 
@@ -33,6 +33,19 @@
 		<!-- Banner -->
 			<section id="banner">
 				<h2>KenPark</h2>
+				<p>
+				<div class="row">
+					<div class="col-lg">
+							<h5 style="color: white;">Peta</h5>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.9211225994613!2d112.7985671141484!3d-7.249817873227326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f9e48e16d31b%3A0xee5c9992ad8ae9bb!2sKenjeran%20Park!5e0!3m2!1sid!2sid!4v1621890449940!5m2!1sid!2sid" width="80%" height="400px" style="border:0;" allowfullscreen=""
+								loading="lazy"></iframe>
+						</div>
+					<div class="col-lg">
+							<h5 style="color: white;">Street View</h5>
+							<iframe src="https://www.google.com/maps/embed?pb=!4v1621890771193!6m8!1m7!1s-Gn7QiNPBoxIaeQZeqZgzg!2m2!1d-7.249771333539929!2d112.8008050192644!3f211.54909!4f0!5f0.7820865974627469"  width="80%" height="400px" style="border:0;" allowfullscreen=""
+								loading="lazy"></iframe>
+						</div>
+				</div>
 				<!-- <h5>Website tempat wisata Kenjeran Baru</h5> -->
 			</section>
 
@@ -69,13 +82,13 @@
 										<p class="card-text">
 											Atlantis land merupakan taman keluarga di kastil negeri dongeng, dengan wahana pekan raya, dinosaurus model & seluncuran air.
 										</p>
-										<button style="width:18%;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_map">
+										<button style="width:18%;" type="button" class="btn btn-primary trigger" data-opt="1">
 											Peta
 										</button>
-										<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal_street">
+										<button type="button" class="btn btn-success trigger" data-opt="2">
 											Street View 
 										</button>
-										<button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal_360">
+										<button type="button" class="btn btn-info trigger" data-opt="3">
 											Camera 360
 										</button>
 									</div>
@@ -89,13 +102,13 @@
 										<p class="card-text">
 											Pagoda ini merupakan pagoda megah ini bisa jadi tempat foto-foto atau berpiknik ria.
 										</p>
-										<button style="width:18%;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_map">
+										<button style="width:18%;" type="button" class="btn btn-primary trigger" data-opt="4">
 											Peta
 										</button>
-										<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal_street">
+										<button type="button" class="btn btn-success trigger" data-opt="5">
 											Street View 
 										</button>
-										<button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal_360">
+										<button type="button" class="btn btn-info trigger" data-opt="6">
 											Camera 360
 										</button>
 									</div>
@@ -113,13 +126,13 @@
 										<p class="card-text">
 											Tempat ibadah agama kong hu chu, tempat ini juga menjadi tempat tujuan bagi wisatawan.
 										</p>
-										<button style="width:18%;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_map">
+										<button style="width:18%;" type="button" class="btn btn-primary trigger" data-opt="7">
 											Peta
 										</button>
-										<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal_street">
+										<button type="button" class="btn btn-success trigger" data-opt="8">
 											Street View 
 										</button>
-										<button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal_360">
+										<button type="button" class="btn btn-info trigger" data-opt="9">
 											Camera 360
 										</button>
 									</div>
@@ -133,25 +146,19 @@
 										<p class="card-text">
 											Patung megah dengan 4 muka yang dilapis emas merupakan patung agama Hindu Buddha. Tempat ini juga bagus untuk spot foto.
 										</p>
-										<button style="width:18%;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_map">
+										<button style="width:18%;" type="button" class="btn btn-primary trigger" data-opt="10">
 											Peta
 										</button>
-										<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal_street">
+										<button type="button" class="btn btn-success trigger" data-opt="11">
 											Street View 
 										</button>
-										<button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal_360">
+										<button type="button" class="btn btn-info trigger" data-opt="12">
 											Camera 360
 										</button>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-						<!-- <ul class="actions">
-							<li><a href="#" class="button special big">Nulla luctus</a></li>
-							<li><a href="#" class="button big">Sed vulputate</a></li>
-						</ul> -->
-					</div>
 				</section>
 
 			<!-- Three -->
@@ -231,11 +238,114 @@
 				</div>
 			</footer>
 
-		<!-- Scripts -->
-			<script src="../js/landing/jquery.min.js"></script>
-			<script src="../js/landing/skel.min.js"></script>
-			<script src="../js/landing/util.js"></script>
-			<script src="../js/landing/main.js"></script>
+			<!-- Modal -->
+<div class="modal fade bd-example-modal-lg" id="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="title"></h5>
+            </div>
+            <div class="modal-body">
+                <iframe id="frame" src="" width="100%" height="400px" style="border:0;" allowfullscreen=""
+                    loading="lazy"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
+	<!-- Bootstrap core JavaScript-->
+	<script src="../vendor/jquery/jquery.min.js"></script>
+	<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Core plugin JavaScript-->
+	<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!-- Custom scripts for all pages-->
+	<script src="../js/sb-admin-2.min.js"></script>
+
+	<script type="text/javascript">
+    $('.trigger').on('click', function () {
+        var opt = $(this).data('opt');
+        switch (opt) {
+            case 1:
+                var src =
+                "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.891089732794!2d112.80053011414834!3d-7.253234673265294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f9e4ced47e0d%3A0xe5fc2a04c76c6c97!2sAtlantis%20Land%20Kenjeran!5e0!3m2!1sid!2sid!4v1621888928236!5m2!1sid!2sid"
+                var title = "Peta Atlantis Land";
+                break;
+            case 2:
+                var src =
+                "https://www.google.com/maps/embed?pb=!4v1621888973602!6m8!1m7!1sCAoSLEFGMVFpcE8xTmF1d3FOcHdXZC0yMkNheUdRVnFKMkxMUHdHUHZNR0xsOXp5!2m2!1d-7.254288!2d112.8018528!3f37.78611799999999!4f24.746719999999996!5f0.7820865974627469"
+                var title = "Street View Atlantis Land";
+                break;
+            case 3:
+                var src =
+                "https://www.google.com/maps/embed?pb=!4v1621889011505!6m8!1m7!1s8nc2nwespuRVLwbtnoKCdw!2m2!1d-7.253329690095828!2d112.8029222769374!3f305.43738!4f0!5f0.7820865974627469"
+                var title = "Camera 360 Atlantis Land";
+                break;
+            case 4:
+                var src =
+				"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.88780062706!2d112.80295011414844!3d-7.253608773269455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f9e34f12ea35%3A0x8b90294562b31526!2sPagoda%20Tian%20Ti!5e0!3m2!1sid!2sid!4v1621889073236!5m2!1sid!2sid" 
+                var title = "Peta Pagoda Tian Ti";
+                break;
+			case 5:
+				var src =
+				"https://www.google.com/maps/embed?pb=!4v1621889159504!6m8!1m7!1s9cKgDm9AMOeHpBubdJPsoA!2m2!1d-7.254165761592636!2d112.8052025548826!3f352.07108!4f0!5f0.7820865974627469" 
+				var title = "Street View Pagoda Tian Ti";
+				break;
+            case 6:
+                var src =
+				"https://www.google.com/maps/embed?pb=!4v1621889588511!6m8!1m7!1sCAoSLEFGMVFpcE5oQ2ozXzFCWXA5NmdNZm1Jd0VoZTdHNFYtU2lsYkx4MGM5Q1dh!2m2!1d-7.252997828904998!2d112.8055772811914!3f348.92282!4f21.157555000000002!5f0.7820865974627469" 
+                var title = "Camera 360 Pagoda Tian Ti";
+                break;
+            case 7:
+                var src =
+                "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.943077551593!2d112.79986021414834!3d-7.247319073199554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f9b908223be3%3A0x323ac83a2ab1ff6a!2sKelenteng%20Sanggar%20Agung%20Kenjeran!5e0!3m2!1sid!2sid!4v1621889735346!5m2!1sid!2sid"
+                var title = "Peta Klenteng Sanggar Angung";
+                break;
+            case 8:
+                var src =
+				"https://www.google.com/maps/embed?pb=!4v1621889796490!6m8!1m7!1sAElPdRWzYNR96hMooqE1qw!2m2!1d-7.248555416791929!2d112.8022513157001!3f350.4809!4f0!5f0.7820865974627469" 
+                var title = "Street View Klenteng Sanggar Agung";
+                break;
+			case 9:
+                var src = 
+				"https://www.google.com/maps/embed?pb=!4v1617530101770!6m8!1m7!1sCAoSLEFGMVFpcE1ha2pDQ0lOMXdPc2pNRF9QaUcydjJqWVBnT19kbnA4empmTWxB!2m2!1d-7.247154199999999!2d112.8025535!3f269.67448007737346!4f-1.8420999644238236!5f0.4000000000000002"
+                var title = "Camera 360 Sanggar Agung";
+                break;
+			case 10:
+                var src =
+				"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.9434315736967!2d112.79889271414831!3d-7.2472787731991355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f9e7ab0c45f1%3A0x4f2edddef340be2a!2sPatung%20Brahma%204%20Rupa!5e0!3m2!1sid!2sid!4v1621890285772!5m2!1sid!2sid"
+                var title = "Peta Patung Brahma";
+                break;
+			case 11:
+                var src =
+				"https://www.google.com/maps/embed?pb=!4v1621882491956!6m8!1m7!1s037fb23iHDkndhUM1n8Q4Q!2m2!1d-7.246826669141439!2d112.8011770220298!3f190.27298!4f0!5f0.7820865974627469";
+                var title = "Street View Patung Brahma";
+                break;
+			case 12:
+                var src =
+				"https://www.google.com/maps/embed?pb=!4v1617529740461!6m8!1m7!1sCAoSLEFGMVFpcE1Kc2MxaHJlVXpxeERnNUVXd0NMbUpTdUlQQm5wQjFOWkJRZ3pB!2m2!1d-7.234584225213776!2d112.7380507110095!3f349.5917912610072!4f-3.760105986796205!5f0.7820865974627469"
+                var title = "Camera 360 Patung Brahma";
+                break;
+            default:
+                console.log("error");
+                alert("Terjadi Kesalahan Harap Coba Lagi");
+                break;
+        }
+        $('#modal').modal('show').on('shown.bs.modal', function () {
+            $("#frame").attr("src", src);
+			console.log(src);
+            $("#title").text(title);
+        });
+    });
+
+    $("#modal").on('hide.bs.modal', function () {
+        $("#frame").attr("src", "");
+        $("#title").text("");
+    });
+</script>
 	</body>
 </html>
