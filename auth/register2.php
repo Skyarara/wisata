@@ -1,24 +1,3 @@
-<?php
-require '../function.php';
-
-if( isset($_POST["register"]) )
-{
-
-    if (registrasi($_POST) > 0 ) {
-        echo "<script>
-                alert('User Ditambahkan');
-              </script>";
-
-    }
-    else{
-        echo mysqli_error ($conn);
-    }
-
-}
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,16 +36,10 @@ if( isset($_POST["register"]) )
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
-                            <form class="user">
+                            <form class="user" method="POST" action="register_aksi.php">
                                 <div class="form-group">
-                                    <!-- <div class="col-sm-6 mb-3 mb-sm-0"> -->
-                                        <input type="text" class="form-control form-control-user" id="Username"
-                                            placeholder="Username" name="Username">
-                                    <!-- </div> -->
-                                    <!-- <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" id="LastName"
-                                            placeholder="Last Name" name="LastName">
-                                    </div> -->
+                                    <input type="text" class="form-control form-control-user" id="Username"
+                                        placeholder="Username" name="Username">
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control form-control-user" id="Email"
@@ -74,34 +47,21 @@ if( isset($_POST["register"]) )
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="password" class="form-control form-control-user"
-                                            id="Password" placeholder="Password" name="Password">
+                                        <input type="password" class="form-control form-control-user" id="Password"
+                                            placeholder="Password" name="Password">
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="password" class="form-control form-control-user"
-                                            id="Password2" placeholder="Repeat Password" name="Password2">
+                                        <input type="password" class="form-control form-control-user" id="Password2"
+                                            placeholder="Repeat Password" name="Password2">
                                     </div>
                                 </div>
-                                <!-- <a href="login.html" class="btn btn-primary btn-user btn-block" >
-                                    Register Account
-                                </a> -->
-                                <button type="submit" name="register" class="btn btn-primary btn-user btn-block"> 
+                                <button type="submit" class="btn btn-primary btn-user btn-block" id="submit">
                                     Register Account
                                 </button>
-                                <hr>
-                                <a href="index.html" class="btn btn-google btn-user btn-block">
-                                    <i class="fab fa-google fa-fw"></i> Register with Google
-                                </a>
-                                <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                    <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
-                                </a>
                             </form>
                             <hr>
                             <div class="text-center">
-                                <a class="small" href="forgot-password.html">Forgot Password?</a>
-                            </div>
-                            <div class="text-center">
-                                <a class="small" href="login.html">Already have an account? Login!</a>
+                                <a class="small" href="login.php">Already have an account? Login!</a>
                             </div>
                         </div>
                     </div>
@@ -123,5 +83,17 @@ if( isset($_POST["register"]) )
     <script src="../js/sb-admin-2.min.js"></script>
 
 </body>
+
+<script>
+    $("#submit").on("click", function (event) {
+        var pass = $("#Password").val();
+        var pass2 = $("#Password2").val();;
+
+        if (pass != pass2) {
+            event.preventDefault();
+            alert("Password tidak sama");
+        }
+    });
+</script>
 
 </html>

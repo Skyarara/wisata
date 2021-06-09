@@ -19,8 +19,6 @@ if( isset($_POST["login"])) {
         
         $row = mysqli_fetch_assoc($result);
         if($pass == $row["password"]) {
-            // var_dump($pass);
-            // exit;
             header("Location: ../main/index.php");
             exit;
         }
@@ -87,7 +85,8 @@ if( isset($_POST["login"])) {
                                                 placeholder="Password" required>
                                         </div>
 
-                                        <button type="submit" name ="login" class="btn btn-primary btn-user btn-block">Masuk</button>
+                                        <button type="submit" name="login"
+                                            class="btn btn-primary btn-user btn-block">Masuk</button>
 
                                         <!-- <hr> -->
                                         <!-- <a href="#" class="btn btn-google btn-user btn-block">
@@ -102,7 +101,7 @@ if( isset($_POST["login"])) {
                                         <a class="small" href="#">Lupa Password?</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="#">Buat Akun!</a>
+                                        <a class="small" href="register2.php">Buat Akun!</a>
                                     </div>
                                     <div class="text-center">
                                         <a class="small" href="../landing/index.php">Kembali?</a>
