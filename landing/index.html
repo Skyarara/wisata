@@ -267,6 +267,7 @@
 	<script src="../js/sb-admin-2.min.js"></script>
 
 	<script type="text/javascript">
+
     $('.trigger').on('click', function () {
         var opt = $(this).data('opt');
         switch (opt) {
@@ -337,7 +338,6 @@
         }
         $('#modal').modal('show').on('shown.bs.modal', function () {
             $("#frame").attr("src", src);
-			console.log(src);
             $("#title").text(title);
         });
     });
