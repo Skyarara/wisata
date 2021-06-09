@@ -9,7 +9,7 @@
 <audio id="audio_brahma" src="audio/b.mp3"></audio>
 <audio id="audio_pagoda" src="audio/pagoda.m4a"></audio>
 <!-- <audio id="audio_atlantis" src="audio/pagoda.m4a"></audio> -->
-<input type="text" value="0" id="playing">
+<input type="hidden" value="0" id="playing">
 
 <div class="container-fluid">
 
