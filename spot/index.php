@@ -13,7 +13,7 @@
         <div class="col-md-6">
             <div class="card shadow mb-6">
                 <div class="card-header py-6">
-                    <h6 class="m-0 font-weight-bold text-primary">Klenteng Sangar Agung</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Klenteng Sanggar Agung</h6>
                 </div>
                 <div class="card-body">
                     <img src="../img/kenjeran/klenteng sanggaragung resized.jpg" width="100%" height="400px"
@@ -188,12 +188,12 @@
                 var
                     src =
                     "https://www.google.com/maps/embed?pb=!4v1621882190368!6m8!1m7!1sAElPdRWzYNR96hMooqE1qw!2m2!1d-7.248555416791929!2d112.8022513157001!3f350.4809!4f0!5f0.7820865974627469";
-                var title = "Street View Klenteng Sangar Agung";
+                var title = "Street View Klenteng Sanggar Agung";
                 break;
             case 2:
                 var src =
                     "https://www.google.com/maps/embed?pb=!4v1617530101770!6m8!1m7!1sCAoSLEFGMVFpcE1ha2pDQ0lOMXdPc2pNRF9QaUcydjJqWVBnT19kbnA4empmTWxB!2m2!1d-7.247154199999999!2d112.8025535!3f269.67448007737346!4f-1.8420999644238236!5f0.4000000000000002"
-                var title = "Camera 360 Klenteng Sangar Agung";
+                var title = "Camera 360 Klenteng Sanggar Agung";
                 break;
             case 3:
                 var src =
