@@ -5,8 +5,8 @@
 
 ?>
 <!-- audio -->
-<audio id="audio_klenteng" src="audio/a.mp3"></audio>
-<audio id="audio_brahma" src="audio/b.mp3"></audio>
+<audio id="audio_klenteng" src="audio/Klenteng.m4a"></audio>
+<audio id="audio_brahma" src="audio/4 muka.m4a"></audio>
 <audio id="audio_pagoda" src="audio/pagoda.m4a"></audio>
 <!-- <audio id="audio_atlantis" src="audio/pagoda.m4a"></audio> -->
 <input type="hidden" value="0" id="playing">
