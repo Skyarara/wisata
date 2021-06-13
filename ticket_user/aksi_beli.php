@@ -10,7 +10,7 @@
     $target_file = $target_dir . basename($_FILES["bukti"]["name"]);
 
     if (move_uploaded_file($_FILES["bukti"]["tmp_name"], $target_file)) {
-        $sql = "INSERT INTO pembayaran VALUES('', 0, '$jatuh_tempo', NULL, '$harga', '$file', '$id_user', '$id_ticket')";
+        $sql = "INSERT INTO pembayaran VALUES('', 0, '$jatuh_tempo', NULL, '$harga', '$file', '$id_user' ,'$id_ticket')";
         $query = mysqli_query($conn, $sql);
     
         if($query){

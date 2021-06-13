@@ -75,7 +75,5 @@
         var coma_total = addCommas(total);
         $("#harga").val(total);
         $("#fake_harga").val("Rp. " + coma_total);
-        console.log(total);
-        console.log(coma_total);
     });
 </script>

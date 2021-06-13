@@ -73,14 +73,14 @@
             <a class="nav-link" href="../ticket/index.php">
                 <i class="fas fa-fw fa-ticket-alt"></i>
                 <span>Tiket</span></a>
-            <a class="nav-link" href="../ticket/index.php">
+            <a class="nav-link" href="../transaksi/index_admin.php">
                 <i class="fas fa-shopping-cart"></i>
                 <span>Transaksi</span></a>
             <?php else: ?>
             <a class="nav-link" href="../ticket_user/index.php">
                 <i class="fas fa-fw fa-ticket-alt"></i>
                 <span>Tiket</span></a>
-            <a class="nav-link" href="../ticket/index.php">
+            <a class="nav-link" href="../transaksi/index.php">
                 <i class="fas fa-shopping-cart"></i>
                 <span>Transaksi</span></a>
             <?php endif; ?>

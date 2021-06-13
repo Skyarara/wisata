@@ -1,5 +1,8 @@
 <?php
     include '../conn.php';
+    if(!isset($_SESSION['login'])){
+        header("location:javascript://history.go(-1)");
+    }
 ?>
 
 <!DOCTYPE html>
