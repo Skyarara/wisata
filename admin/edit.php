@@ -3,8 +3,8 @@
     include "../layout/user/sidebar.php";
     include "../layout/user/navbar.php";
 
-    $id_admin = $_GET['id_admin'];
-    $sql= "SELECT * FROM admin WHERE id_admin='$id_admin'";
+    $id_user = $_GET['id_user'];
+    $sql= "SELECT * FROM user WHERE id_user='$id_user'";
     $query = mysqli_query($conn, $sql);
     $data = mysqli_fetch_array($query);
 ?>
@@ -21,10 +21,18 @@
         </div>
         <div class="card-body">
             <form method="POST" action="action_edit.php">
-                <input type="hidden" name="id" value="<?=$id_admin?>">
+                <input type="hidden" name="id" value="<?=$id_user?>">
                 <div class="mb-3">
                     <label class="form-label">Username</label>
-                    <input type="text" class="form-control" value="<?=$data['username']?>" name="username" required>
+                    <input type="text" class="form-control" value="<?=$data['Nama']?>" name="username" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="text" class="form-control" value="<?=$data['email']?>" name="username" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Role</label>
+                    <input type="text" class="form-control" value="<?=$data['is_admin']?>" name="username" required>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Password</label>

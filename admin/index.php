@@ -3,7 +3,7 @@
     include "../layout/user/sidebar.php";
     include "../layout/user/navbar.php";
 
-    $sql = "SELECT * FROM admin";
+    $sql = "SELECT * FROM user";
     $query = mysqli_query($conn,$sql);
 ?>
 <div class="container-fluid">
@@ -26,7 +26,8 @@
                         <tr role="row">
                             <th>Nomor</th>
                             <th>Username</th>
-                            <th>Password</th>
+                            <th>Email</th>
+                            <th>Role</th>
                             <th>Aksi</th>                        
                             </tr>
                     </thead>
@@ -34,7 +35,8 @@
                         <tr>
                             <th>Nomor</th>
                             <th>Username</th>
-                            <th>Password</th>
+                            <th>Email</th>
+                            <th>Role</th>
                             <th>Aksi</th>
                         </tr>
                     </tfoot>
@@ -42,14 +44,15 @@
                         <?php $a = 1; while($data = mysqli_fetch_array($query)){?>
                         <tr role="row" class="odd">
                             <td class="sorting_1"><?= $a++ ?></td>
-                            <td><?=$data['username']?></td>
-                            <td><?=$data['password']?></td>
+                            <td><?=$data['Nama']?></td>
+                            <td><?=$data['email']?></td>
+                            <td><?=$data['is_admin']?></td>
                             <td>
-                                <a href="delete.php?id_admin=<?=$data['id_admin']?>"
+                                <a href="delete.php?id_user=<?=$data['id_user']?>"
                                     class="btn btn-danger btn-sm">Hapus</a>
-                                <a href="edit.php?id_admin=<?=$data['id_admin']?>"
+                                <a href="edit.php?id_user=<?=$data['id_user']?>"
                                     class="btn btn-warning btn-sm">Edit</a>
-                                <a href="detil.php?id_admin=<?=$data['id_admin']?>"
+                                <a href="detil.php?id_user=<?=$data['id_user']?>"
                                     class="btn btn-info btn-sm">Detail</a>
                             </td>
                         </tr>
