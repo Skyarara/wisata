@@ -24,7 +24,7 @@
 
         <!-- Divider -->
         <hr class="sidebar-divider">
-
+        <?php if($_SESSION["role"] == 1):?>
         <div class="sidebar-heading">
             Akun
         </div>
@@ -32,12 +32,17 @@
         <li class="nav-item">
             <a class="nav-link" href="../admin/index.php">
                 <i class="fas fa-fw fa-user"></i>
-                <span>Admin</span></a>
+                <span>Admin</span>
+            </a>
+            <a class="nav-link" href="../admin/index.php">
+                <i class="fas fa-fw fa-users"></i>
+                <span>User</span></a>
+            </a>
         </li>
 
         <!-- Divider -->
         <hr class="sidebar-divider">
-
+        <?php endif;?>
         <!-- Heading -->
         <div class="sidebar-heading">
             Landmark
@@ -53,27 +58,6 @@
                 <i class="fas fa-fw fa-vr-cardboard"></i>
                 <span>Spots</span></a>
         </li>
-        <!-- <li class="nav-item">
-        </li> -->
-
-        <!-- Nav Item - Utilities Collapse Menu -->
-        <!-- <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                aria-expanded="true" aria-controls="collapseUtilities">
-                <i class="fas fa-fw fa-wrench"></i>
-                <span>Utilities</span>
-            </a>
-            <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Pemesatan Tiket:</h6>
-                    <a class="collapse-item" href="utilities-color.html">Colors</a>
-                    <a class="collapse-item" href="utilities-border.html">Borders</a>
-                    <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                    <a class="collapse-item" href="utilities-other.html">Other</a>
-                </div>
-            </div>
-        </li> -->
 
         <!-- Divider -->
         <hr class="sidebar-divider">
@@ -85,13 +69,21 @@
 
         <!-- Nav Item - Tables -->
         <li class="nav-item">
+            <?php if($_SESSION["role"] == 1): ?>
             <a class="nav-link" href="../ticket/index.php">
                 <i class="fas fa-fw fa-ticket-alt"></i>
                 <span>Tiket</span></a>
-
-            <a class="nav-link" href="../tourGuide/index.php">
-                <i class="fas fa-fw fa-users"></i>
-                <span>Tour Guide</span></a>
+            <a class="nav-link" href="../ticket/index.php">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Transaksi</span></a>
+            <?php else: ?>
+            <a class="nav-link" href="../ticket_user/index.php">
+                <i class="fas fa-fw fa-ticket-alt"></i>
+                <span>Tiket</span></a>
+            <a class="nav-link" href="../ticket/index.php">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Transaksi</span></a>
+            <?php endif; ?>
         </li>
 
         <!-- Divider -->

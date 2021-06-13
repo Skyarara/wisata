@@ -14,7 +14,7 @@
 
     </div>
 
-    <h5 class="h5 mb-0 text-black-800">Selamat Datang Venti !</h5>
+    <h5 class="h5 mb-0 text-black-800">Selamat Datang <?= $_SESSION["nama"] ?> !</h5>
 
     <!-- End of Main Content -->
 </div>

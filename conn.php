@@ -1,5 +1,5 @@
 <?php 
-
+    session_start();
     $server = "localhost";
     $username = "root";
     $db_name = "wisata";

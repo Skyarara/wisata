@@ -31,10 +31,6 @@
                     <button type="button" data-opt="1" class="btn btn-success trigger">
                         Street View
                     </button>
-                    <a class="btn btn-warning" href="virtual_tour.php">
-                        Virtual Tour
-                    </a>
-                    </button>
                     <button type="button" data-opt="2" class="btn btn-info trigger">
                         Camera 360
                     </button>

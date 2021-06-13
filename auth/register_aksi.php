@@ -8,7 +8,7 @@
     $Email = $data["Email"];
     $Password = $data["Password"];
 
-    $sql = "INSERT INTO user VALUES('', '$Username', '$Email', '$Password')";
+    $sql = "INSERT INTO user VALUES('', '$Username', '$Email', 0,'$Password')";
     $query = mysqli_query($conn, $sql);
 
     if(!$query){

@@ -1,6 +1,5 @@
-<?php 
-session_start();
-session_unset();
+<?php
+    include '../conn.php';
 ?>
 
 <!DOCTYPE html>
@@ -34,8 +33,5 @@ session_unset();
     <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
-<?php
-    include '../conn.php';
-?>
 
 <body id="page-top">

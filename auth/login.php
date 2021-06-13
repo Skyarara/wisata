@@ -1,15 +1,12 @@
 <?php
-
-session_start();
-// if( !isset($_SESSION("login")) {
-//     header("Location: login.php");
-//     exit;
-// }
-
 include '../conn.php';
+
+if( isset($_SESSION["login"])) {
+    header("Location: ../main/index.php");
+    exit;
+}
+
 if( isset($_POST["login"])) {
-// var_dump(10);
-// exit;
     $email = $_POST["email"];
     $pass = $_POST["password"];
 
@@ -19,13 +16,16 @@ if( isset($_POST["login"])) {
         
         $row = mysqli_fetch_assoc($result);
         if($pass == $row["password"]) {
+            $_SESSION["login"] = true;
+            $_SESSION["role"] = $row['is_admin'];
+            $_SESSION["nama"] = $row['Nama'];
+            $_SESSION["id_user"] = $row['id_user'];
             header("Location: ../main/index.php");
             exit;
         }
     } else {
         echo "salah";
     }
-    $error = true;
 }
 
 ?>
@@ -87,14 +87,6 @@ if( isset($_POST["login"])) {
 
                                         <button type="submit" name="login"
                                             class="btn btn-primary btn-user btn-block">Masuk</button>
-
-                                        <!-- <hr> -->
-                                        <!-- <a href="#" class="btn btn-google btn-user btn-block">
-                                                <i class="fab fa-google fa-fw"></i> Masuk dengan Google
-                                            </a>
-                                            <a href="#" class="btn btn-facebook btn-user btn-block">
-                                                <i class="fab fa-facebook-f fa-fw"></i> Masuk dengan Facebook
-                                            </a> -->
                                     </form>
                                     <hr>
                                     <div class="text-center">
