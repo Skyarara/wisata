@@ -3,8 +3,9 @@
     include "../layout/user/sidebar.php";
     include "../layout/user/navbar.php";
 
-    
-    $sql = "SELECT * FROM pembayaran JOIN user JOIN ticket WHERE pembayaran.id_user = user.id_user AND pembayaran.id_ticket = ticket.id_ticket";
+    $id = $_SESSION['id_user'];
+    $sql = "SELECT * FROM pembayaran JOIN user JOIN ticket ON pembayaran.id_user = user.id_user WHERE
+    pembayaran.id_ticket = ticket.id_ticket AND pembayaran.id_user = '$id'";
     $query = mysqli_query($conn,$sql);
     ?>
 <link rel="stylesheet" href="style.css">
@@ -27,7 +28,6 @@
     <!-- Page Heading -->
     <h1 class="h3 mb-2 text-gray-800">Transaksi</h1>
     <p class="mb-4">Daftar Transaksi</p>
-    <a href="add.php" class="btn btn-primary">Tambah</a>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
@@ -46,7 +46,7 @@
                             <th>Tanggal Klarifikasi</th>
                             <th>Bukti Pembayaran</th>
                             <th>Status</th>
-                            <th style="width: 20%;">Aksi</th>
+                            <th>Aksi</th>
                         </tr>
                     </thead>
                     <tfoot>
@@ -58,7 +58,7 @@
                             <th>Tanggal Klarifikasi</th>
                             <th>Bukti Pembayaran</th>
                             <th>Status</th>
-                            <th>Aksi</th>
+                            <th style="width: 20%;">Aksi</th>
                         </tr>
                     </tfoot>
                     <tbody>
@@ -81,22 +81,16 @@
                             <td style="color:red; font-weight:bold;">Belum Diverifikasi</td>
                             <?php endif; ?>
                             <td>
-                                <a href="delete.php?id_ticket=<?=$data['id_ticket']?>"
-                                    class="btn btn-danger btn-sm">Hapus</a>
-                                <a href="detail.php?id_pembayaran=<?=$data['id_pembayaran']?>"
-                                    class="btn btn-info btn-sm">Detail</a>
-                                <?php if($data['status'] != 1): ?>
-                                <a href="klarifikasi.php?id_pembayaran=<?=$data['id_pembayaran']?>&&status=<?=$data['status']?>"
-                                    class="btn btn-success btn-sm">Verifikasi</a>
-                                <?php endif; ?>
-                                <?php if($data['status'] != 2 && $data['status'] != 1): ?>
-                                <a href="tolak.php?id_pembayaran=<?=$data['id_pembayaran']?>"
-                                    class="btn btn-danger btn-sm">Tolak</a>
+                                <?php if($data['status'] != 1 && $data['status'] != 2): ?>
+                                <a href="batal.php?id_pembayaran=<?=$data['id_pembayaran']?>"
+                                    class="btn btn-danger btn-sm">Batal</a>
                                 <?php endif; ?>
                                 <?php if($data['status'] == 2): ?>
-                                <a href="detail_tolak.php?id_pembayaran=<?=$data['id_pembayaran']?>"
-                                    class="btn btn-danger btn-sm">Alasan Penolakan</a>
+                                <a href="perbaikan.php?id_pembayaran=<?=$data['id_pembayaran']?>&&status=<?=$data['status']?>"
+                                    class="btn btn-warning btn-sm">Perbaikan</a>
                                 <?php endif; ?>
+                                <a href="detail.php?id_pembayaran=<?=$data['id_pembayaran']?>"
+                                    class="btn btn-info btn-sm">Detail</a>
                             </td>
                         </tr>
                         <?php } ?>

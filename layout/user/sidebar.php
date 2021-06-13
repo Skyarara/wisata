@@ -31,12 +31,8 @@
 
         <li class="nav-item">
             <a class="nav-link" href="../admin/index.php">
-                <i class="fas fa-fw fa-user"></i>
-                <span>Admin</span>
-            </a>
-            <a class="nav-link" href="../admin/index.php">
                 <i class="fas fa-fw fa-users"></i>
-                <span>User</span></a>
+                <span>Users</span></a>
             </a>
         </li>
 
