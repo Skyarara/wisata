@@ -8,6 +8,7 @@
     $query = mysqli_query($conn, $sql);
     $data = mysqli_fetch_array($query);
 ?>
+
 <div class="container-fluid">
 
     <!-- Page Heading -->
@@ -27,8 +28,7 @@
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Harga</label>
-                    <input type="email" class="form-control" name="email" value="<?=$data['harga']?>"
-                        readonly>
+                    <input type="email" class="form-control" name="email" value="<?=$data['harga']?>" readonly>
                 </div>
                 <a href="index.php" class="btn btn-md btn-info">Back</a>
         </div>
@@ -38,6 +38,5 @@
 
 
 <?php 
-    // }
     include "../layout/user/footer.php";
 ?>

@@ -13,16 +13,28 @@
         $data = mysqli_fetch_array($query);
         
         $to = $data['email'];
+        // $to = "caopipiopi@gmail.com";
 
         $subject = 'Tiket Kenpark';
-        $uniqueid = uniqid();
-        $message = "Pesanan Tiketmu Telah diverifikasi berikut code unikmu: $uniqueid";
 
-        // mail($to, $subject, $message);
+        $message = "
+        <html>
 
-        // $sql = "UPDATE pembayaran SET status=1, tanggal_klarifikasi='$date' WHERE id_pembayaran='$id'";
-        echo $message;
-        exit;
+        <body>
+            <p>Pemesanan tiket sudah dikonfirmasi</p>
+            <a>Ini kode unikmu: <b>$id</b></a><br>
+            <small>Note: Untuk invoice dan barcode dapat dilihat di halaman transaksi</small>
+        </body>
+
+        </html>
+        ";
+
+        $headers[] = 'MIME-Version: 1.0';
+        $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+
+        mail($to, $subject, $message, implode("\r\n", $headers));
+
+        $sql = "UPDATE pembayaran SET status=1, tanggal_klarifikasi='$date' WHERE id_pembayaran='$id'";
     }
     $query = mysqli_query($conn, $sql);
 
