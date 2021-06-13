@@ -8,7 +8,10 @@
     min-height: 680px;
     padding: 15px
 }
-
+.invoice .hidden-print {
+    position: absolute;
+    justify-content: right;
+}
 .invoice header {
     padding: 10px 0;
     margin-bottom: 20px;
