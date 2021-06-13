@@ -14,8 +14,8 @@
     $data = mysqli_fetch_array($query);
 
     if($query){
-        // $to = $data['email'];
-        $to = "caopipiopi@gmail.com";
+        $to = $data['email'];
+        // $to = "caopipiopi@gmail.com";
 
         $subject = 'Tiket Kenpark';
 

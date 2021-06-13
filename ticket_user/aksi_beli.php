@@ -16,7 +16,7 @@
         $query = mysqli_query($conn, $sql);
     
         if($query){
-            header("Location: index.php");
+            header("Location: ../transaksi/index.php");
         }else{
             echo mysqli_error($conn);
         }

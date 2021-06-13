@@ -81,7 +81,7 @@
                             <td style="color:red; font-weight:bold;">Belum Diverifikasi</td>
                             <?php endif; ?>
                             <td>
-                                <a href="delete.php?id_ticket=<?=$data['id_ticket']?>"
+                                <a href="delete.php?id_pembayaran=<?=$data['id_pembayaran']?>"
                                     class="btn btn-danger btn-sm">Hapus</a>
                                 <a href="detail.php?id_pembayaran=<?=$data['id_pembayaran']?>"
                                     class="btn btn-info btn-sm">Detail</a>
@@ -97,6 +97,8 @@
                                 <a href="detail_tolak.php?id_pembayaran=<?=$data['id_pembayaran']?>"
                                     class="btn btn-danger btn-sm">Alasan Penolakan</a>
                                 <?php endif; ?>
+                                <a href="detail_tolak.php?id_pembayaran=<?=$data['id_pembayaran']?>"
+                                    class="btn btn-danger btn-sm">Print</a>
                             </td>
                         </tr>
                         <?php } ?>
