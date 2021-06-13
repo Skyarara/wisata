@@ -1,9 +1,9 @@
 <?php
     include '../conn.php';
 
-    $id = $_GET['id_admin'];
+    $id = $_GET['id_user'];
 
-    $sql = "DELETE FROM admin WHERE id_admin ='$id'";
+    $sql = "DELETE FROM user WHERE id_user ='$id'";
     $query = mysqli_query($conn, $sql);
 
     if($query){
