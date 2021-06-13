@@ -15,11 +15,14 @@
         $to = $data['email'];
 
         $subject = 'Tiket Kenpark';
-        $message = 'Pesanan Tiketmu Telah diverifikasi berikut code unikmu: lasdjlasdjsal';
+        $uniqueid = uniqid();
+        $message = "Pesanan Tiketmu Telah diverifikasi berikut code unikmu: $uniqueid";
 
-        mail($to, $subject, $message);
+        // mail($to, $subject, $message);
 
-        $sql = "UPDATE pembayaran SET status=1, tanggal_klarifikasi='$date' WHERE id_pembayaran='$id'";
+        // $sql = "UPDATE pembayaran SET status=1, tanggal_klarifikasi='$date' WHERE id_pembayaran='$id'";
+        echo $message;
+        exit;
     }
     $query = mysqli_query($conn, $sql);
 
