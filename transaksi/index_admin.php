@@ -19,7 +19,7 @@
     <img class="modal-content" id="img01">
 
     <!-- Modal Caption (Image Text) -->
-    <div id="caption"></div>
+    <div id="caption"></div>DSD
 </div>
 
 <div class="container-fluid">
