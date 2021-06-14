@@ -49,8 +49,6 @@
                                     class="btn btn-danger btn-sm">Hapus</a>
                                 <a href="edit.php?id_ticket=<?=$data['id_ticket']?>"
                                     class="btn btn-warning btn-sm">Ubah</a>
-                                <a href="detail.php?id_ticket=<?=$data['id_ticket']?>"
-                                    class="btn btn-info btn-sm">Detail</a>
                             </td>
                         </tr>
                         <?php } ?>

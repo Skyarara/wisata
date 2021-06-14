@@ -27,7 +27,6 @@
     <!-- Page Heading -->
     <h1 class="h3 mb-2 text-gray-800">Transaksi</h1>
     <p class="mb-4">Daftar Transaksi</p>
-    <a href="add.php" class="btn btn-primary">Tambah</a>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
