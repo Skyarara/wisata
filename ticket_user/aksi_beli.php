@@ -12,7 +12,7 @@
 
     if (move_uploaded_file($_FILES["bukti"]["tmp_name"], $target_file)) {
         $uniqueid = uniqid();
-        $sql = "INSERT INTO pembayaran VALUES('$uniqueid', 0, $date,'$jatuh_tempo', NULL, '$harga', '$file', NULL, '$id_user' ,'$id_ticket')";
+        $sql = "INSERT INTO pembayaran VALUES('$uniqueid', 0, '$date','$jatuh_tempo', NULL, '$harga', '$file', NULL, '$id_user' ,'$id_ticket')";
         $query = mysqli_query($conn, $sql);
     
         if($query){

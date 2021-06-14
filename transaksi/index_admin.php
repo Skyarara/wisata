@@ -97,8 +97,10 @@
                                 <a href="detail_tolak.php?id_pembayaran=<?=$data['id_pembayaran']?>"
                                     class="btn btn-danger btn-sm">Alasan Penolakan</a>
                                 <?php endif; ?>
-                                <a href="detail_tolak.php?id_pembayaran=<?=$data['id_pembayaran']?>"
-                                    class="btn btn-danger btn-sm">Print</a>
+                                <?php if($data['status'] == 1): ?>
+                                <a href="invoice/invoice2.php?id_pembayaran=<?=$data['id_pembayaran']?>"
+                                    class="btn btn-secondary btn-sm">Print</a>
+                                <?php endif; ?>
                             </td>
                         </tr>
                         <?php } ?>

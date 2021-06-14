@@ -91,6 +91,10 @@
                                 <?php endif; ?>
                                 <a href="detail.php?id_pembayaran=<?=$data['id_pembayaran']?>"
                                     class="btn btn-info btn-sm">Detail</a>
+                                <?php if($data['status'] == 1): ?>
+                                <a href="invoice/invoice2.php?id_pembayaran=<?=$data['id_pembayaran']?>"
+                                    class="btn btn-secondary btn-sm">Print</a>
+                                <?php endif; ?>
                             </td>
                         </tr>
                         <?php } ?>
