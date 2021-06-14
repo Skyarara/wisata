@@ -42,11 +42,12 @@
                     </tfoot>
                     <tbody>
                         <?php $a = 1; while($data = mysqli_fetch_array($query)){?>
+                        <?php if($data['id_user'] != $_SESSION['id_user']): ?>
                         <tr role="row" class="odd">
                             <td class="sorting_1"><?= $a++ ?></td>
                             <td><?=$data['Nama']?></td>
                             <td><?=$data['email']?></td>
-                            <?php if($data['is_admin'] == 0): ?>
+                            <?php if($data['is_admin'] == 1): ?>
                             <td>Admin</td>
                             <?php else:?>
                             <td>User</td>
@@ -55,8 +56,8 @@
                                 <a href="delete.php?id_user=<?=$data['id_user']?>"
                                     class="btn btn-danger btn-sm">Hapus</a>
                                 <a href="edit.php?id_user=<?=$data['id_user']?>" class="btn btn-warning btn-sm">Edit</a>
-                                <a href="detil.php?id_user=<?=$data['id_user']?>" class="btn btn-info btn-sm">Detail</a>
                             </td>
+                            <?php endif; ?>
                         </tr>
                         <?php } ?>
                     </tbody>

@@ -3,6 +3,7 @@
 
     $id = $_POST['id'];
     $username = $_POST['username'];
+    $email = $_POST['email'];
     
     if($_POST['password'] != NULL){
         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
