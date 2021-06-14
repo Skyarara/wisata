@@ -8,4 +8,3 @@
 
     mail($to, $subject, $message, $headers);
 ?>
-abc

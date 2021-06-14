@@ -8,7 +8,7 @@
 <audio id="audio_klenteng" src="audio/Klenteng.m4a"></audio>
 <audio id="audio_brahma" src="audio/4 muka.m4a"></audio>
 <audio id="audio_pagoda" src="audio/pagoda.m4a"></audio>
-<!-- <audio id="audio_atlantis" src="audio/pagoda.m4a"></audio> -->
+<audio id="audio_atlantis" src="audio/atlantis.m4a"></audio>
 <input type="hidden" value="0" id="playing">
 
 <div class="container-fluid">
@@ -137,7 +137,7 @@
                     <button type="button" data-opt="8" class="btn btn-info trigger">
                         Camera 360
                     </button>
-                    <button type="button" class="btn btn-primary">
+                    <button type="button" class="btn btn-primary audio" data-opt="4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-volume-up" viewBox="0 0 16 16">
                             <path
