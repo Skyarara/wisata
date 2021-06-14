@@ -46,9 +46,9 @@
                             <td class="sorting_1"><?= $a++ ?></td>
                             <td><?=$data['Nama']?></td>
                             <td><?=$data['email']?></td>
-                            <?php if($data['is_admin'] == 1): ?>
+                            <?php if($data['is_admin'] == 0): ?>
                             <td>Admin</td>
-                            <?php else: ?>
+                            <?php else:?>
                             <td>User</td>
                             <?php endif; ?>
                             <td>

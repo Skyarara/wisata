@@ -90,9 +90,6 @@ if( isset($_POST["login"])) {
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="#">Lupa Password?</a>
-                                    </div>
-                                    <div class="text-center">
                                         <a class="small" href="register2.php">Buat Akun!</a>
                                     </div>
                                     <div class="text-center">
