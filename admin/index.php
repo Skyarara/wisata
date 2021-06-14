@@ -46,7 +46,11 @@
                             <td class="sorting_1"><?= $a++ ?></td>
                             <td><?=$data['Nama']?></td>
                             <td><?=$data['email']?></td>
-                            <td><?=$data['is_admin']?></td>
+                            <?php if($data['is_admin'] == 1): ?>
+                            <td>Admin</td>
+                            <?php else: ?>
+                            <td>User</td>
+                            <?php endif; ?>
                             <td>
                                 <a href="delete.php?id_user=<?=$data['id_user']?>"
                                     class="btn btn-danger btn-sm">Hapus</a>
