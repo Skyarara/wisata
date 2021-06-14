@@ -10,7 +10,7 @@
 
     <!-- Page Heading -->
     <h1 class="h3 mb-2 text-gray-800">Admin</h1>
-    <p class="mb-4">Daftar Admin </p>
+    <p class="mb-4">Daftar User </p>
     <a href="add.php" class="btn btn-primary">Tambah</a>
 
     <!-- DataTales Example -->
@@ -28,8 +28,8 @@
                             <th>Username</th>
                             <th>Email</th>
                             <th>Role</th>
-                            <th>Aksi</th>                        
-                            </tr>
+                            <th>Aksi</th>
+                        </tr>
                     </thead>
                     <tfoot>
                         <tr>
@@ -54,10 +54,8 @@
                             <td>
                                 <a href="delete.php?id_user=<?=$data['id_user']?>"
                                     class="btn btn-danger btn-sm">Hapus</a>
-                                <a href="edit.php?id_user=<?=$data['id_user']?>"
-                                    class="btn btn-warning btn-sm">Edit</a>
-                                <a href="detil.php?id_user=<?=$data['id_user']?>"
-                                    class="btn btn-info btn-sm">Detail</a>
+                                <a href="edit.php?id_user=<?=$data['id_user']?>" class="btn btn-warning btn-sm">Edit</a>
+                                <a href="detil.php?id_user=<?=$data['id_user']?>" class="btn btn-info btn-sm">Detail</a>
                             </td>
                         </tr>
                         <?php } ?>

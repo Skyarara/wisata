@@ -6,7 +6,7 @@
 
     $Username = strtolower(stripslashes($data["Username"]));
     $Email = $data["Email"];
-    $Password = $data["Password"];
+    $Password = password_hash($data["Password"], PASSWORD_DEFAULT);
 
     $sql = "INSERT INTO user VALUES('', '$Username', '$Email', 0,'$Password')";
     $query = mysqli_query($conn, $sql);

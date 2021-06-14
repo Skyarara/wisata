@@ -36,8 +36,8 @@
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Password</label>
-                    <input type="password" class="form-control" name="password" value="<?=$data['password']?>"
-                        required>
+                    <input type="text" class="form-control" name="password">
+                    <small style="color:red;">Kosongkan jika tidak ingin diganti</small>
                 </div>
                 <button type="submit" class="btn btn-md btn-warning">Ubah</button>
         </div>

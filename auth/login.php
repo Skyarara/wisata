@@ -9,22 +9,27 @@ if( isset($_SESSION["login"])) {
 if( isset($_POST["login"])) {
     $email = $_POST["email"];
     $pass = $_POST["password"];
-
     $result = mysqli_query($conn, "SELECT * FROM user WHERE email = '$email'");
 
     if( mysqli_num_rows($result) === 1) {
         
         $row = mysqli_fetch_assoc($result);
-        if($pass == $row["password"]) {
+        if(password_verify($pass, $row['password'])) {
             $_SESSION["login"] = true;
             $_SESSION["role"] = $row['is_admin'];
             $_SESSION["nama"] = $row['Nama'];
             $_SESSION["id_user"] = $row['id_user'];
             header("Location: ../main/index.php");
             exit;
+        }else{
+            echo '<script type="text/javascript">
+                alert("Password Salah");
+            </script>';
         }
     } else {
-        echo "salah";
+            echo '<script type="text/javascript">
+                alert("Username Tidak Ditemukan");
+            </script>';
     }
 }
 
